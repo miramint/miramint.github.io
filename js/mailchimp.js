@@ -81,7 +81,7 @@ function mce_init_form(){
       };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://miramintapp.us3.list-manage1.com/subscribe/post-json?u=b9a20b60eff57396e79021198&amp;id=f0316e6b73&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://miramint.us8.list-manage1.com/subscribe/post-json?u=b9a20b60eff57396e79021198&amp;id=f0316e6b73&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
